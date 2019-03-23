@@ -1,0 +1,56 @@
+{
+  "name": "lavrahq/query",
+  "description": "Build an Eloquent query using a beautiful query synax.",
+  "keywords": [
+    "laravel",
+    "eloquent",
+    "builder",
+    "api",
+    "graphql",
+    "query"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Scott Plunkett",
+      "email": "plunkets@aeoss.io"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Lavra\\Query\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Lavra\\Query\\Tests\\": "tests/"
+    },
+    "files": [
+      "tests/helpers.php"
+    ]
+  },
+  "require": {
+    "illuminate/auth": "^5.0",
+    "illuminate/cache": "^5.0",
+    "illuminate/container": "^5.0",
+    "illuminate/contracts": "^5.0",
+    "illuminate/database": "^5.0"
+  },
+  "require-dev": {
+    "mockery/mockery": "^0.9.5",
+    "phpunit/phpunit": "^4.8.35"
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Lavra\\Query\\QueryServiceProvider"
+      ],
+      "aliases": {
+        "Query": "Lavra\\Query\\Facades\\Query"
+      }
+    }
+  }
+}
