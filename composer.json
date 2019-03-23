@@ -1,5 +1,6 @@
 {
   "name": "lavrahq/query",
+  "version": "1.0.1",
   "description": "Build an Eloquent query using a beautiful query synax.",
   "keywords": [
     "laravel",
